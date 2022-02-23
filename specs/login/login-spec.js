@@ -13,12 +13,12 @@ describe('My Login application', () => {
     });
 
     it('user should not be able to log in without email addres and password', async () => {
-        // navigate to Login page
+        // navigate to Login page 
        await LoginPage.singInBtn.click();
        await LoginPage.singInBtn2.click();
         // click SignIn without any input
        await LoginPage.btnSubmit.click();
-        // verify red frame around the input box
+        // verify red frame around the input BOX
        await LoginPage.loginErrorIndicator.waitForDisplayed();
 });
 })
